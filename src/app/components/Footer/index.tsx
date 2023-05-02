@@ -1,5 +1,4 @@
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import { HashLink } from 'react-router-hash-link';
 import LogoWhiteIcon from '../../svgs/LogoWhiteIcon';
@@ -10,15 +9,14 @@ const Footer = () => {
   return (
     <StyledFooterContainer>
       <StyledTopFooter>
-        <Box sx={{ display: 'flex', alignItems: 'center' }} mb={3}>
+        <HashLink to={'#top'} className='footer-logo'>
           <LogoWhiteIcon />
           <Typography variant="body1" className='logo-text'>
             <span style={{ fontWeight: 'bold' }}>Casba </span>
             <span style={{fontWeight: 'lighter'}}>Media</span>
             </Typography>
-        </Box>
+          </HashLink>
         <Typography variant="body1" className='menu-text'>
-          <HashLink to={'#top'}>Home</HashLink>
           {menu.map((menu) => (
             <HashLink smooth to={menu.link} key={menu.id}>
               {menu.text}

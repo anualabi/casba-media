@@ -17,6 +17,13 @@ export const StyledTopFooter = styled(Box)(
     align-items: center;
     padding: 2rem 0;
 
+    .footer-logo {
+      color: white;
+      display: flex;
+      align-items: center;
+      margin-bottom: 2.5rem;
+    }
+
     svg {
       margin-right: 2px;
       width: 50px;
@@ -30,10 +37,12 @@ export const StyledTopFooter = styled(Box)(
     .menu-text {
       font-size: 0.8rem;
       text-transform: uppercase;
+      display: flex;
 
       a {
         color: white;
         padding: 0 1rem;
+        text-align: center;
       }
     }
 
@@ -41,11 +50,19 @@ export const StyledTopFooter = styled(Box)(
       border: 0;
       border-top: 0.1rem solid rgba(255, 255, 255, 0.12);
       margin: 1rem auto;
-      width: 25%;
+      width: 75%;
     }
 
     .address-text {
       font-size: 0.9rem;
+      padding: 0 0.5rem;
+      text-align: center;
+    }
+
+    ${theme.breakpoints.up('md')} {
+      .divider {
+        width: 25%;
+      }
     }
   `)
 

@@ -8,7 +8,7 @@ export const StyledContactContainer = styled(Container)(
     flex-direction: column;
     justify-content: space-evenly;
     min-height: 70vh;
-    margin: 1rem 0;
+    margin: 2rem 0;
 
     ${theme.breakpoints.up('md')} {
       flex-direction: row;
