@@ -43,6 +43,6 @@ export const services = [
     id: 4,
     image: <BizDevelopmentIcon />,
     title: 'Business Development',
-    text: 'We proactively seek new business opportunities within the online gaming market, identify client needs and suggest appropriate products/services'
+    text: 'We proactively seek new business opportunities within the online gaming market, identify client needs and suggest appropriate products/services.'
   }
 ];
