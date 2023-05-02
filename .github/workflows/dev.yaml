@@ -1,0 +1,37 @@
+name: Deploy to Dev Environment
+
+on:
+  pull_request:
+    types: [opened, reopened]
+    branches:
+      - main
+
+jobs:
+
+  DEV:
+    runs-on: ubuntu-latest
+    environment: 
+      name: DEV
+      url: http://casba-media-dev-environment.s3-website.eu-central-1.amazonaws.com/
+    env:
+      BUCKET_NAME: casba-media-dev-environment
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Configure AWS CLI
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+      - name: Setup Node and Cache
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: npm
+      - name: Build site
+        run: |
+          npm ci
+          npm run build
+      - name: Deploy files to bucket
+        run: aws s3 cp build s3://${{ env.BUCKET_NAME }} --recursive --acl public-read
