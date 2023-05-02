@@ -4,22 +4,24 @@ import { StyledContactContainer, StyledFooterText, StyledFooterImage } from './s
 
 const ContactUs = () => {
   return (
-    <StyledContactContainer id="contact-us" maxWidth="xl">
-      <StyledFooterText>
-        <Typography variant="h3" className="heading">
-          It'd be great to hear from you!
-        </Typography>
-        <Typography variant="body1" className="subheading">
-            CASBA Media processes your personal data based on a legitimate interest.
-        </Typography>
-        <a href="mailto:contact@casbamedia.com" className="cta-btn" >
-          Get in Touch
-        </a>
-      </StyledFooterText>
-      <StyledFooterImage>
-        <FooterImage />
-      </StyledFooterImage>
-    </StyledContactContainer>
+    <section id="contact-us">
+      <StyledContactContainer  maxWidth="xl">
+        <StyledFooterText>
+          <Typography variant="h3" className="heading">
+            It'd be great to hear from you!
+          </Typography>
+          <Typography variant="body1" className="subheading">
+              CASBA Media processes your personal data based on a legitimate interest.
+          </Typography>
+          <a href="mailto:contact@casbamedia.com" className="cta-btn" >
+            Contact us
+          </a>
+        </StyledFooterText>
+        <StyledFooterImage>
+          <FooterImage />
+        </StyledFooterImage>
+      </StyledContactContainer>
+    </section>
   );
 };
 

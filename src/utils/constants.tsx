@@ -4,7 +4,7 @@ import ExpertiseIcon from '../app/svgs/ExpertiseIcon';
 import IntegrityIcon from '../app/svgs/IntegrityIcon';
 import DesignDevIcon from '../app/svgs/DesignDevIcon';
 import DigitalMarketingIcon from '../app/svgs/DigitalMarketingIcon';
-import MediaBuyingIcon from '../app/svgs/MediaBuyingIcon';
+import BizDevelopmentIcon from '../app/svgs/BizDevelopmentIcon';
 import ProgrammaticIcon from '../app/svgs/ProgrammaticIcon';
 
 export const menu = [
@@ -35,14 +35,14 @@ export const services = [
   },
   {
     id: 3,
-    image: <MediaBuyingIcon />,
-    title: 'Media Buying',
-    text: 'We take a holistic approach with paid media to execute campaigns to strategically deliver customer acquisition with effective budgeting.'
+    image: <ProgrammaticIcon />,
+    title: 'Performance Marketing',
+    text: 'We build and manage acquisition campaigns across various channels including social, SEM, and display to drive revenue and increase ROI.'
   },
   {
     id: 4,
-    image: <ProgrammaticIcon />,
-    title: 'Programmatic Advertising',
-    text: 'In the simplest terms, we use an automated software driven way to buy digital space for your advert to be displayed.'
+    image: <BizDevelopmentIcon />,
+    title: 'Business Development',
+    text: 'We proactively seek new business opportunities within the online gaming market, identify client needs and suggest appropriate products/services'
   }
 ];

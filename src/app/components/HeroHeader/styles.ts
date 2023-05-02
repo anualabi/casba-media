@@ -5,13 +5,14 @@ import { styled } from '@mui/material/styles';
 export const StyledHeroContainer = styled(Container)(
   ({ theme }) => `
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-evenly;
-    min-height: 90vh;
-    margin: 5rem 0;
+    min-height: 80vh;
+    margin: 5rem 0 0;
 
     ${theme.breakpoints.up('md')} {
       flex-direction: row;
+      min-height: 90vh;
       margin: auto;
     }
   `
@@ -23,18 +24,21 @@ export const StyledHeroText = styled(Box)(
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5rem 0 auto;
+    margin: -7rem 0 0;
     padding: 1%;
     text-align: center;
     width: 95%;
     min-height: 40vh;
 
     .heading {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: bolder;
+      line-height: 2.5rem;
       margin: -1rem auto 1rem;
     }
 
     .subheading {
+      font-size: 0.9rem;
       margin-bottom: 2rem;
     }
 
@@ -48,8 +52,8 @@ export const StyledHeroText = styled(Box)(
       align-items: center;
       font-size: 1rem;
       font-weight: 600;
-      margin: auto;
-      text-alin: left;
+      margin: -0.25rem auto 0;
+      text-align: left;
       text-transform: capitalize;
       height: 50px;
       width: 220px;
@@ -63,6 +67,11 @@ export const StyledHeroText = styled(Box)(
 
       .heading {
         font-size: 2.5rem;
+        line-height: 3.5rem;
+      }
+
+      .subheading {
+        font-size: 1.1rem;
       }
 
       .cta-btn,
@@ -81,7 +90,7 @@ export const StyledHeroImage = styled(Box)(
     align-items: center;
     margin: -9rem auto 0;
     max-width: 350px;
-    min-height: 40vh;
+    min-height: 25vh;
 
     svg {
       width: 90%;

@@ -8,8 +8,8 @@ export const StyledAboutContainer = styled(Container)(
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -4rem;
-    padding-bottom: 2rem;
+    margin-top: 4rem;
+    padding: 4rem 0;
 
     ${theme.breakpoints.up('md')} {
       flex-direction: row;
@@ -20,7 +20,7 @@ export const StyledAboutContainer = styled(Container)(
 
 export const StyledAboutImage = styled(Box)(
   ({ theme }) => `
-    margin: -4rem auto 0;
+    margin: -4rem auto;
     width: 95%;
     display: flex;
 
@@ -39,7 +39,7 @@ export const StyledAboutImage = styled(Box)(
 export const StyledAboutText = styled(Box)(
   ({ theme }) => `
     padding: 0;
-    margin: -8rem auto 0;
+    margin: 0 auto;
     text-align: center;
     width: 95%;
 
@@ -51,6 +51,7 @@ export const StyledAboutText = styled(Box)(
 
     .description {
       margin-top: 1rem;
+      padding: 0.25rem;
     }
 
 
@@ -66,6 +67,10 @@ export const StyledAboutText = styled(Box)(
 
       .subtitle, .description {
         margin-bottom: 2rem;
+      }
+
+      .description {
+        padding: 0 0.5rem 0 0;
       }
     }
   `

@@ -1,4 +1,4 @@
-const MediaBuyingIcon = () => (
+const BizDevelopmentIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={90.638}
@@ -12,4 +12,4 @@ const MediaBuyingIcon = () => (
   </svg>
 );
 
-export default MediaBuyingIcon;
+export default BizDevelopmentIcon;

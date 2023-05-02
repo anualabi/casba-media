@@ -5,10 +5,10 @@ import { styled } from '@mui/material/styles';
 export const StyledNavBar = styled(AppBar)(
   ({ theme }) => `
     background-color: white;
-    height: 80px;
+    height: 60px;
 
     ${theme.breakpoints.up('md')} {
-      height: 90px;
+      height: 80px;
     }
   `
 );
