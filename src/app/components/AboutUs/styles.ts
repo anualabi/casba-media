@@ -9,7 +9,7 @@ export const StyledAboutContainer = styled(Container)(
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
-    padding: 2rem 0.25rem 1rem;
+    padding: 4rem 0.25rem 1rem;
 
     ${theme.breakpoints.up('md')} {
       flex-direction: row;
