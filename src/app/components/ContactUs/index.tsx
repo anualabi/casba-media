@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography';
-import FooterImage from '../../svgs/FooterImage';
+import ContactImage from '../../svgs/ContactImage';
 import { StyledContactContainer, StyledFooterText, StyledFooterImage } from './styles';
 
 const ContactUs = () => {
@@ -18,7 +18,7 @@ const ContactUs = () => {
           </a>
         </StyledFooterText>
         <StyledFooterImage>
-          <FooterImage />
+          <ContactImage />
         </StyledFooterImage>
       </StyledContactContainer>
     </section>

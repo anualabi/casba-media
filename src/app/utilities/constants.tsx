@@ -1,11 +1,15 @@
-import AccountabilityIcon from '../app/svgs/AccountabilityIcon';
-import InnovationIcon from '../app/svgs/InnovationIcon';
-import ExpertiseIcon from '../app/svgs/ExpertiseIcon';
-import IntegrityIcon from '../app/svgs/IntegrityIcon';
-import DesignDevIcon from '../app/svgs/DesignDevIcon';
-import DigitalMarketingIcon from '../app/svgs/DigitalMarketingIcon';
-import BizDevelopmentIcon from '../app/svgs/BizDevelopmentIcon';
-import ProgrammaticIcon from '../app/svgs/ProgrammaticIcon';
+import baocasino from '../assets/baocasino-logo.png'
+import betsson from '../assets/betsson-logo.png'
+import betwinner from '../assets/betwinner-logo.png'
+import playojo from '../assets/playojo-logo.png'
+import AccountabilityIcon from '../svgs/scorecard/AccountabilityIcon';
+import InnovationIcon from '../svgs/scorecard/InnovationIcon';
+import ExpertiseIcon from '../svgs/scorecard/ExpertiseIcon';
+import IntegrityIcon from '../svgs/scorecard/IntegrityIcon';
+import DesignDevIcon from '../svgs/services/DesignDevIcon';
+import DigitalMarketingIcon from '../svgs/services/DigitalMarketingIcon';
+import BizDevelopmentIcon from '../svgs/services/BizDevelopmentIcon';
+import ProgrammaticIcon from '../svgs/services/ProgrammaticIcon';
 
 export const menu = [
   { id: 1, link: '/#about-us', text: 'About us' },
@@ -13,7 +17,14 @@ export const menu = [
   { id: 3, link: '/#contact-us', text: 'Get in touch' }
 ];
 
-export const scoreCard = [
+export const brands = [
+  { id: 1, image: <img src={baocasino} alt="Bao Casino logo" />, description: 'Bao casino' },
+  { id: 2, image: <img src={betsson} alt="Betsson logo" />, description: 'Betsson casino' },
+  { id: 3, image: <img src={betwinner} alt="Betwinner logo" />, description: 'Betwinner' },
+  { id: 4, image: <img src={playojo} alt="PlayOjo logo" />, description: 'PlayOJO Casino' },
+]
+
+export const ourValues = [
   { id: 1, image: <AccountabilityIcon />, description: 'Accountability' },
   { id: 2, image: <InnovationIcon />, description: 'Innovation' },
   { id: 3, image: <ExpertiseIcon />, description: 'Expertise' },
