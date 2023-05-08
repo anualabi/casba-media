@@ -8,8 +8,8 @@ export const StyledAboutContainer = styled(Container)(
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
-    padding: 4rem 0;
+    margin-top: 2rem;
+    padding: 2rem 0.25rem 1rem;
 
     ${theme.breakpoints.up('md')} {
       flex-direction: row;

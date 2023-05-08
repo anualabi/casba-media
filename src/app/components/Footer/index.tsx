@@ -2,7 +2,7 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { HashLink } from 'react-router-hash-link';
 import LogoWhiteIcon from '../../svgs/LogoWhiteIcon';
-import { menu } from '../../../utils/constants';
+import { menu } from '../../utilities/constants';
 import { StyledFooterContainer, StyledTopFooter, StyledBottomFooter } from './styles';
 
 const Footer = () => {

@@ -6,7 +6,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { HashLink } from 'react-router-hash-link';
 import LogoIcon from '../../svgs/LogoIcon';
 import NavDrawer from '../NavDrawer';
-import { menu } from '../../../utils/constants';
+import { menu } from '../../utilities/constants';
 import { StyledNavBar, StyledLogo, StyledMenu, StyledDrawer } from './styles';
 
 interface Props {

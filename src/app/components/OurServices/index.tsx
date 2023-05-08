@@ -1,7 +1,7 @@
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
-import { services } from '../../../utils/constants';
+import { services } from '../../utilities/constants';
 import {
   StyledServicesContainer,
   StyledServicesHeading,

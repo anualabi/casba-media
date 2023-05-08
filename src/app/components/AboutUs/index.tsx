@@ -2,7 +2,7 @@ import Typography from '@mui/material/Typography';
 import AboutIcon from '../../svgs/AboutIcon';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import { scoreCard } from '../../../utils/constants';
+import { ourValues } from '../../utilities/constants';
 import {
   StyledAboutContainer,
   StyledAboutImage,
@@ -33,7 +33,7 @@ const AboutUs = () => {
             Our Values
           </Typography>
           <Grid container spacing={4}>
-            {scoreCard.map((card) => (
+            {ourValues.map((card) => (
               <Grid item xs={12} md={3} key={card.id}>
                 <StyledCardItem>
                   {card.image}
